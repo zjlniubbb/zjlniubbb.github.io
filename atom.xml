@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
+  <title>Randy</title>
   
-  
+  <subtitle>sssssssssss</subtitle>
   <link href="https://zjlniubbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://zjlniubbb.github.io/"/>
@@ -10,7 +10,7 @@
   <id>https://zjlniubbb.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Randy zzZ</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>开业大吉</title>
-    <link href="https://zjlniubbb.github.io/2022/08/26/%E5%BC%80%E4%B8%9A%E5%A4%A7%E5%90%89/"/>
-    <id>https://zjlniubbb.github.io/2022/08/26/%E5%BC%80%E4%B8%9A%E5%A4%A7%E5%90%89/</id>
+    <link href="https://zjlniubbb.github.io/2022/08/26/kai-ye-da-ji/"/>
+    <id>https://zjlniubbb.github.io/2022/08/26/kai-ye-da-ji/</id>
     <published>2022-08-25T17:08:26.000Z</published>
     <updated>2022-08-26T04:03:06.281Z</updated>
     
