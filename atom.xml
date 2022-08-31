@@ -6,7 +6,7 @@
   <link href="https://zjlniubbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://zjlniubbb.github.io/"/>
-  <updated>2022-08-31T15:38:26.702Z</updated>
+  <updated>2022-08-31T15:48:06.052Z</updated>
   <id>https://zjlniubbb.github.io/</id>
   
   <author>
@@ -21,39 +21,19 @@
     <link href="https://zjlniubbb.github.io/2022/08/31/take-out-item/"/>
     <id>https://zjlniubbb.github.io/2022/08/31/take-out-item/</id>
     <published>2022-08-31T15:35:46.000Z</published>
-    <updated>2022-08-31T15:38:26.702Z</updated>
+    <updated>2022-08-31T15:48:06.052Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-08-31-23-37-49.png"></p>]]></content>
+    <content type="html"><![CDATA[<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-08-31-23-37-49.png"><br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-08-31-23-37-49.png"><br>123123123<br>aaaaa<br>啊啊啊啊<strong>啊啊啊<br>啊啊啊啊啊</strong></p>]]></content>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-08-31-23-37-49.png&quot;&gt;&lt;/p&gt;
-</summary>
-      
+    <summary type="html">This is a item.</summary>
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="https://zjlniubbb.github.io/2022/08/31/take-out-item/"/>
-    <id>https://zjlniubbb.github.io/2022/08/31/take-out-item/</id>
-    <published>2022-08-31T15:23:42.000Z</published>
-    <updated>2022-08-31T15:30:41.850Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2.jpg"><br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2.jpg"></p>]]></content>
+    <category term="items" scheme="https://zjlniubbb.github.io/categories/items/"/>
     
     
-      
-      
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/31/take-out-item/2.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/31/take-out-item/</summary>
-      
-    
-    
-    
+    <category term="items" scheme="https://zjlniubbb.github.io/tags/items/"/>
     
   </entry>
   
