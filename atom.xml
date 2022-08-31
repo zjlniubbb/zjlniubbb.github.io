@@ -6,7 +6,7 @@
   <link href="https://zjlniubbb.github.io/atom.xml" rel="self"/>
   
   <link href="https://zjlniubbb.github.io/"/>
-  <updated>2022-08-31T14:57:03.301Z</updated>
+  <updated>2022-08-31T15:26:13.773Z</updated>
   <id>https://zjlniubbb.github.io/</id>
   
   <author>
@@ -17,18 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test</title>
+    <link href="https://zjlniubbb.github.io/2022/08/31/test/"/>
+    <id>https://zjlniubbb.github.io/2022/08/31/test/</id>
+    <published>2022-08-31T15:23:42.000Z</published>
+    <updated>2022-08-31T15:26:13.773Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://zjlniubbb.github.io/2022/08/31/test/1.jpg"><br><img src="https://zjlniubbb.github.io/2022/08/31/test/1.jpg"></p><p><img src="https://zjlniubbb.github.io/2022/08/31/test/2.jpg"><br><img src="https://zjlniubbb.github.io/2022/08/31/test/2.jpg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/31/test/1.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/31/test/1.jpg&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;im</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Take_out_item</title>
     <link href="https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/"/>
     <id>https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/</id>
     <published>2022-08-29T06:28:11.000Z</published>
-    <updated>2022-08-31T14:57:03.301Z</updated>
+    <updated>2022-08-31T15:17:15.009Z</updated>
     
-    <content type="html"><![CDATA[<p>软件开发流程<br><img src="https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/../../public/2022-08-31-21-01-46.jpg" alt="软件开发流程"><br><img src="https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/../../public/2022-08-31-21-01-46.jpg"></p>]]></content>
+    <content type="html"><![CDATA[<p>软件开发流程<br><img src="https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/2022-08-31-21-01-46.jpg"><br><img src="https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/2022-08-31-21-01-46.jpg"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;软件开发流程&lt;br&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/../../public/2022-08-31-21-01-46.jpg&quot; alt=&quot;软件开发流程&quot;</summary>
+    <summary type="html">&lt;p&gt;软件开发流程&lt;br&gt;&lt;img src=&quot;https://zjlniubbb.github.io/2022/08/29/take-out-item/take-out-item/2022-08-31-21-01-46.jpg&quot;&gt;&lt;br&gt;&lt;img src=&quot;https://zjl</summary>
       
     
     
