@@ -138,9 +138,13 @@
   <entry>
     <title>take-out-item</title>
     <url>/2022/08/31/take-out-item/</url>
-    <content><![CDATA[<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/1.jpg"><br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/1.jpg"></p>
-<img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/08/31/take-out-item/1.jpg" class="">
-<p>123123123<br>aaaaa<br>啊啊啊啊<strong>啊啊啊<br>啊啊啊啊啊</strong></p>
+    <content><![CDATA[<h1 id="项目介绍："><a href="#项目介绍：" class="headerlink" title="项目介绍："></a>项目介绍：</h1><blockquote>
+<p>本项目是专门为餐饮企业(餐厅、饭店)定制的一款软件产品，包括系统管理后台和移动端应用俩部分。其中，系统管理后台主要提供给餐饮企业内部员工使用，可以对餐厅的菜品、套餐、订单进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。</p>
+</blockquote>
+<h1 id="本项目分为三期开发："><a href="#本项目分为三期开发：" class="headerlink" title="本项目分为三期开发："></a>本项目分为三期开发：</h1><blockquote>
+<p>第一期主要实现基本需求，其中移动端应用通过H5实现，用户可以通过手机浏览器来访问。<br>第二期主要针对移动端应用进行改进，使用微信小程序实现，用户使用起来更加方便。<br>第三期主要针对系统进行优化升级，提高系统的访问性能。</p>
+</blockquote>
+<h1 id="技术选型"><a href="#技术选型" class="headerlink" title="技术选型"></a>技术选型</h1><p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/1.jpg"><br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-01-09-09-51.png"></p>
 ]]></content>
       <categories>
         <category>items</category>
