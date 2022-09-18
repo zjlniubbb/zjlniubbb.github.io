@@ -10,9 +10,12 @@
 
 下载安装完毕，打开如下
 
+
 运行发现并不能打开，会出现闪退，我们需要安装兼容的Python版本，这里推荐的是Version 2.7
 
-2. Python下载我下载的是Python 2">
+
+2. Python下载
+我下载的是Pytho">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -406,14 +409,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-15
+                    2022-09-18
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    395
+                    397
                 </div>
                 
 
@@ -435,32 +438,72 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="一、软件安装"><a href="#一、软件安装" class="headerlink" title="一、软件安装"></a>一、软件安装</h1><p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-47-03.png"></p>
+                <h2 id="一、软件安装"><a href="#一、软件安装" class="headerlink" title="一、软件安装"></a>一、软件安装</h2><p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-47-03.png"></p>
 <h2 id="1-cocos2dx下载"><a href="#1-cocos2dx下载" class="headerlink" title="1. cocos2dx下载"></a>1. cocos2dx下载</h2><p><a target="_blank" rel="noopener" href="https://www.cocos.com/">点击前往官网地址</a></p>
 <p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-50-54.png"></p>
 <p>下载安装完毕，打开如下</p>
 <p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
+<blockquote>
 <p>运行发现并不能打开，会出现闪退，我们需要安装兼容的Python版本，这里推荐的是Version 2.7</p>
+</blockquote>
 <p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-48-29.png"></p>
-<h2 id="2-Python下载"><a href="#2-Python下载" class="headerlink" title="2. Python下载"></a>2. Python下载</h2><p>我下载的是<a target="_blank" rel="noopener" href="https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64.msi">Python 2.7.8</a></p>
+<h2 id="2-Python下载"><a href="#2-Python下载" class="headerlink" title="2. Python下载"></a>2. Python下载</h2><blockquote>
+<p>我下载的是<a target="_blank" rel="noopener" href="https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64.msi">Python 2.7.8</a></p>
+</blockquote>
+<blockquote>
 <p>务必记住下载安装的路径！！！<br>然后去配置环境变量<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-09-19.png"></p>
+</blockquote>
+<blockquote>
 <p>cmd 回车输入 python 查看当前版本信息，到这Python就安装完成啦！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-11-47.png"></p>
+</blockquote>
+<blockquote>
 <p>此时再打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
+</blockquote>
+<blockquote>
 <p>两次回车跳过，因为这些是你需要另外下载的东西<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-17-06.png"></p>
+</blockquote>
+<blockquote>
 <p>然后我们在打开cmd 回车输入 cocos<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-18-40.png"><br>显示出这个 咱们就大功告成啦！完结撒花！！！(刚刚开始=_=!)</p>
-<h1 id="二、创建项目"><a href="#二、创建项目" class="headerlink" title="二、创建项目"></a>二、创建项目</h1><p>使用 cocos new 命令创建新项目，命令格式如下:<br>cocos new -p -l -d<br>cocos new <game name=""> -p <package identifier=""> -l <language> -d <location></location></language></package></game></p>
+</blockquote>
+<h2 id="二、创建项目"><a href="#二、创建项目" class="headerlink" title="二、创建项目"></a>二、创建项目</h2><blockquote>
+<p>使用 cocos new 命令创建新项目，命令格式如下:<br>cocos new -p -l -d<br>cocos new <game name=""> -p <package identifier=""> -l <language> -d <location></location></language></package></game></p>
+</blockquote>
+<blockquote>
 <p>示例：cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany</p>
+</blockquote>
+<blockquote>
 <p>cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany</p>
+</blockquote>
+<blockquote>
 <p>cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany</p>
+</blockquote>
 <p>使用命令 cocos new –help 可以查看到更多关于项目创建的帮助信息。</p>
-<h1 id="三、运行项目"><a href="#三、运行项目" class="headerlink" title="三、运行项目"></a>三、运行项目</h1><p>目前是没办法运行的，我们还需要安装一个cmake工具<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-31-57.png"></p>
-<p><a target="_blank" rel="noopener" href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/7b036e88-bbde-4859-a5cd-147d21b66141?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A/20220914/us-east-1/s3/aws4_request&amp;X-Amz-Date=20220914T144255Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=703433151e7e66a2b2addd5cfab8a8292b6126c49634452434577ee933bbec0f&amp;X-Amz-SignedHeaders=host&amp;actor_id=106440820&amp;key_id=0&amp;repo_id=537699&amp;response-content-disposition=attachment;%20filename=cmake-3.24.2-windows-x86_64.zip&amp;response-content-type=application/octet-stream">点击下载cmake-3.24.2-windows-x86_64</a><br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-33-07.png"><br>记得把cmake bin 配置到环境变量中！</p>
+<h2 id="三、运行项目"><a href="#三、运行项目" class="headerlink" title="三、运行项目"></a>三、运行项目</h2><blockquote>
+<p>目前是没办法运行的，我们还需要安装一个cmake工具</p>
+</blockquote>
+<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-31-57.png"></p>
+<p><a target="_blank" rel="noopener" href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/7b036e88-bbde-4859-a5cd-147d21b66141?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A/20220914/us-east-1/s3/aws4_request&amp;X-Amz-Date=20220914T144255Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=703433151e7e66a2b2addd5cfab8a8292b6126c49634452434577ee933bbec0f&amp;X-Amz-SignedHeaders=host&amp;actor_id=106440820&amp;key_id=0&amp;repo_id=537699&amp;response-content-disposition=attachment;%20filename=cmake-3.24.2-windows-x86_64.zip&amp;response-content-type=application/octet-stream">点击下载cmake-3.24.2-windows-x86_64</a><br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-33-07.png"></p>
+<blockquote>
+<p>记得把cmake bin 配置到环境变量中！</p>
+</blockquote>
+<blockquote>
 <p>然后回到我们创建项目的proj.win32目录下 输入cmd回车<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-37-12.png"></p>
+</blockquote>
+<blockquote>
 <p>执行如下命令：<br>cmake .. -G”Visual Studio 17 2022” -Tv143 -A win32<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-38-27.png"></p>
+</blockquote>
+<blockquote>
 <p>运行完毕后，回到proj.win32目录下，我们发现多了很多东西，打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-39-45.png"></p>
+</blockquote>
+<blockquote>
 <p>设为启动项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-40-22.png"></p>
+</blockquote>
+<blockquote>
 <p>执行项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-02.png"></p>
+</blockquote>
+<blockquote>
 <p>完结撒花！！！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-53.png"></p>
+</blockquote>
 
                 
             </div>
@@ -477,7 +520,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="/about" rel="external nofollow noreferrer">Randy</a>
+                    <a href="/about" rel="external nofollow noreferrer">赵海棠</a>
                 </span>
             </div>
             <div class="reprint__type">
@@ -500,7 +543,7 @@
                     本博客所有文章除特別声明外，均采用
                     <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
                     许可协议。转载请注明来源
-                    <a href="/about" target="_blank">Randy</a>
+                    <a href="/about" target="_blank">赵海棠</a>
                     !
                 </span>
             </div>
@@ -605,18 +648,17 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2022/09/14/c/">
+                <a href="/2022/09/18/lua-demo01/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="C++游戏开发-基于cocos2dx4.0-环境安装">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="Lua学习笔记01">
                         
-                        <span class="card-title">C++游戏开发-基于cocos2dx4.0-环境安装</span>
+                        <span class="card-title">Lua学习笔记01</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -626,25 +668,16 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-14
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-18
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
-                            Randy
+                            赵海棠
                             
                         </span>
                     </div>
-                </div>
-
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">
-                        <span class="chip bg-color">游戏开发</span>
-                    </a>
-                    
                 </div>
                 
             </div>
@@ -825,7 +858,7 @@
             
                 <span id="year">2021-2022</span>
             
-            <a href="/about" target="_blank">Randy</a>
+            <a href="/about" target="_blank">赵海棠</a>
             |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
             |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
             <br>

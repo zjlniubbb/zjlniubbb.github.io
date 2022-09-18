@@ -1,95 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>C++游戏开发-基于cocos2dx4.0-环境安装</title>
-    <url>/2022/09/14/c/</url>
-    <content><![CDATA[<h1 id="一、软件安装"><a href="#一、软件安装" class="headerlink" title="一、软件安装"></a>一、软件安装</h1><p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-47-03.png"></p>
-<h2 id="1-cocos2dx下载"><a href="#1-cocos2dx下载" class="headerlink" title="1. cocos2dx下载"></a>1. cocos2dx下载</h2><p><a href="https://www.cocos.com/">点击前往官网地址</a></p>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-50-54.png"></p>
-<p>下载安装完毕，打开如下</p>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
-<p>运行发现并不能打开，会出现闪退，我们需要安装兼容的Python版本，这里推荐的是Version 2.7</p>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-48-29.png"></p>
-<h2 id="2-Python下载"><a href="#2-Python下载" class="headerlink" title="2. Python下载"></a>2. Python下载</h2><p>我下载的是<a href="https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64.msi">Python 2.7.8</a></p>
-<p>务必记住下载安装的路径！！！<br>然后去配置环境变量<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-09-19.png"></p>
-<p>cmd 回车输入 python 查看当前版本信息，到这Python就安装完成啦！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-11-47.png"></p>
-<p>此时再打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
-<p>两次回车跳过，因为这些是你需要另外下载的东西<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-17-06.png"></p>
-<p>然后我们在打开cmd 回车输入 cocos<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-18-40.png"><br>显示出这个 咱们就大功告成啦！完结撒花！！！(刚刚开始=_=!)</p>
-<h1 id="二、创建项目"><a href="#二、创建项目" class="headerlink" title="二、创建项目"></a>二、创建项目</h1><p>使用 cocos new 命令创建新项目，命令格式如下:<br>cocos new -p -l -d<br>cocos new <game name=""> -p <package identifier=""> -l <language> -d <location></location></language></package></game></p>
-<p>示例：cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany</p>
-<p>cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany</p>
-<p>cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany</p>
-<p>使用命令 cocos new –help 可以查看到更多关于项目创建的帮助信息。</p>
-<h1 id="三、运行项目"><a href="#三、运行项目" class="headerlink" title="三、运行项目"></a>三、运行项目</h1><p>目前是没办法运行的，我们还需要安装一个cmake工具<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-31-57.png"></p>
-<p><a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/7b036e88-bbde-4859-a5cd-147d21b66141?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A/20220914/us-east-1/s3/aws4_request&amp;X-Amz-Date=20220914T144255Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=703433151e7e66a2b2addd5cfab8a8292b6126c49634452434577ee933bbec0f&amp;X-Amz-SignedHeaders=host&amp;actor_id=106440820&amp;key_id=0&amp;repo_id=537699&amp;response-content-disposition=attachment;%20filename=cmake-3.24.2-windows-x86_64.zip&amp;response-content-type=application/octet-stream">点击下载cmake-3.24.2-windows-x86_64</a><br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-33-07.png"><br>记得把cmake bin 配置到环境变量中！</p>
-<p>然后回到我们创建项目的proj.win32目录下 输入cmd回车<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-37-12.png"></p>
-<p>执行如下命令：<br>cmake .. -G”Visual Studio 17 2022” -Tv143 -A win32<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-38-27.png"></p>
-<p>运行完毕后，回到proj.win32目录下，我们发现多了很多东西，打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-39-45.png"></p>
-<p>设为启动项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-40-22.png"></p>
-<p>执行项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-02.png"></p>
-<p>完结撒花！！！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-53.png"></p>
-]]></content>
-      <tags>
-        <tag>游戏开发</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Java项目实战——瑞吉外卖Day01</title>
-    <url>/2022/08/31/take-out-item/</url>
-    <content><![CDATA[<h2 id="Java项目实战——瑞吉外卖Day01"><a href="#Java项目实战——瑞吉外卖Day01" class="headerlink" title="Java项目实战——瑞吉外卖Day01"></a><strong>Java项目实战——瑞吉外卖Day01</strong></h2><p>ps:笔记内容为黑马程序员视频内容</p>
-<h2 id="1、项目介绍"><a href="#1、项目介绍" class="headerlink" title="1、项目介绍"></a>1、项目介绍</h2><blockquote>
-<p>本项目是专门为餐饮企业(餐厅、饭店)定制的一款软件产品，包括系统管理后台和移动端应用俩部分。其中，系统管理后台主要提供给餐饮企业内部员工使用，可以对餐厅的菜品、套餐、订单进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。</p>
+    <title>VocabularyDay01</title>
+    <url>/2022/08/26/vocabularyday01/</url>
+    <content><![CDATA[<p><strong>1. ego：</strong><br>/ˈiː.ɡəʊ/ plural egos<br><strong>n.自我评价；自我中心；自负</strong>；<a href="https://zjlniubbb.github.io/">自尊心</a></p>
+<blockquote>
+<p><em>That man has such an enormous ego - I’ve never known anyone so full of themselves!</em><br>那个人自负得要命—我从来没有见过这么自以为是的人。</p>
 </blockquote>
-<h1 id="本项目分为三期开发："><a href="#本项目分为三期开发：" class="headerlink" title="本项目分为三期开发："></a>本项目分为三期开发：</h1><blockquote>
-<ul>
-<li>第一期主要实现基本需求，其中移动端应用通过H5实现，用户可以通过手机浏览器来访问。</li>
-</ul>
+<p><strong>2. egoism：</strong><br>/ˈiːɡəʊ.ɪ.zəm/ = egotism /ˈiː.ɡə.tɪ.zəm/<br><strong>n.自我主义；自大；自负</strong></p>
+<blockquote>
+<p><em>Finding herself world-famous by the time she was 18 only encouraged the actress’s egotism/egoism.</em><br>年仅18岁就闻名世界只是让这位女演员变得更加自负了。</p>
 </blockquote>
-<ul>
-<li>第二期主要针对移动端应用进行改进，使用微信小程序实现，用户使用起来更加方便。</li>
-<li>第三期主要针对系统进行优化升级，提高系统的访问性能。</li>
-</ul>
-<h2 id="2、技术选型"><a href="#2、技术选型" class="headerlink" title="2、技术选型"></a>2、技术选型</h2><p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-01-09-09-51.png"></p>
-<h2 id="3、功能架构"><a href="#3、功能架构" class="headerlink" title="3、功能架构"></a>3、功能架构</h2><p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-01-09-26-12.png"></p>
-<h2 id="4、环境搭建"><a href="#4、环境搭建" class="headerlink" title="4、环境搭建"></a>4、环境搭建</h2><ul>
-<li><p>创建数据库<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-10-04.png"></p>
-</li>
-<li><p>执行SQL脚本<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-10-41.png"></p>
-</li>
-<li><p>数据表<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-11-00.png"></p>
-</li>
-<li><p>maven项目搭建<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-11-27.png"></p>
-</li>
-<li><p>添加依赖</p>
-<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=%253C%253Fxml%2520version%253D%25221.0%2522%2520encoding%253D%2522UTF-8%2522%253F%253E%250A%253Cproject%2520xmlns%253D%2522http%253A%252F%252Fmaven.apache.org%252FPOM%252F4.0.0%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253Axsi%253D%2522http%253A%252F%252Fwww.w3.org%252F2001%252FXMLSchema-instance%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520xsi%253AschemaLocation%253D%2522http%253A%252F%252Fmaven.apache.org%252FPOM%252F4.0.0%2520http%253A%252F%252Fmaven.apache.org%252Fxsd%252Fmaven-4.0.0.xsd%2522%253E%250A%2520%2520%2520%2520%253CmodelVersion%253E4.0.0%253C%252FmodelVersion%253E%250A%250A%2520%2520%2520%2520%253CgroupId%253Eorg.zzz%253C%252FgroupId%253E%250A%2520%2520%2520%2520%253CartifactId%253Etake_out_item%253C%252FartifactId%253E%250A%2520%2520%2520%2520%253Cversion%253E1.0-SNAPSHOT%253C%252Fversion%253E%250A%250A%2520%2520%2520%2520%253Cparent%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter-parent%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E2.4.5%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CrelativePath%252F%253E%2520%253C%21--%2520lookup%2520parent%2520from%2520repository%2520--%253E%250A%2520%2520%2520%2520%253C%252Fparent%253E%250A%250A%2520%2520%2520%2520%253Cproperties%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cjava.version%253E1.8%253C%252Fjava.version%253E%250A%2520%2520%2520%2520%253C%252Fproperties%253E%250A%2520%2520%2520%2520%253Cdependencies%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter-test%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cscope%253Etest%253C%252Fscope%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter-web%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cscope%253Ecompile%253C%252Fscope%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Ecom.baomidou%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Emybatis-plus-boot-starter%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E3.4.2%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.projectlombok%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Elombok%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E1.18.20%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Ecom.alibaba%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Efastjson%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E1.2.76%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Ecommons-lang%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Ecommons-lang%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E2.6%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A" style="width: 800px; height: 1825px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
-</iframe></li>
-<li><p>application.yml</p>
-<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=server%253A%250A%2520%2520port%253A%25208080%250Aspring%253A%250A%2520%2520application%253A%250A%2520%2520%2520%2520%2523%25E5%25BA%2594%25E7%2594%25A8%25E5%2590%258D%25E7%25A7%25B0%250A%2520%2520%2520%2520name%253A%2520reggie_take_out%250A%2520%2520datasource%253A%250A%2520%2520%2520%2520druid%253A%250A%2520%2520%2520%2520%2520%2520driver-class-name%253A%2520com.mysql.cj.jdbc.Driver%250A%2520%2520%2520%2520%2520%2520url%253A%2520jdbc%253Amysql%253A%252F%252Flocalhost%253A3306%252Freggie%253FserverTimezone%253DAsia%252FShanghai%2526useUnicode%253Dtrue%2526characterEncoding%253Dutf-8%2526zeroDateTimeBehavior%253DconvertToNull%2526useSSL%253Dfalse%2526allowPublicKeyRetrieval%253Dtrue%250A%2520%2520%2520%2520%2520%2520username%253A%2520root%250A%2520%2520%2520%2520%2520%2520password%253A%25201234%250Amybatis-plus%253A%250A%2520%2520configuration%253A%250A%2520%2520%2520%2520%2523address_book-%253EAddressBook%250A%2520%2520%2520%2520%2523%25E5%259C%25A8%25E6%2598%25A0%25E5%25B0%2584%25E5%25AE%259E%25E4%25BD%2593%25E6%2588%2596%25E8%2580%2585%25E5%25B1%259E%25E6%2580%25A7%25E6%2597%25B6%25EF%25BC%258C%25E5%25B0%2586%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593%25E4%25B8%25AD%25E8%25A1%25A8%25E5%2590%258D%25E5%2592%258C%25E5%25AD%2597%25E6%25AE%25B5%25E5%2590%258D%25E4%25B8%25AD%25E7%259A%2584%25E4%25B8%258B%25E5%2588%2592%25E7%25BA%25BF%25E5%258E%25BB%25E6%258E%2589%25EF%25BC%258C%25E6%258C%2589%25E7%2585%25A7%25E9%25A9%25BC%25E5%25B3%25B0%25E5%2591%25BD%25E5%2590%258D%25E6%25B3%2595%25E6%2598%25A0%25E5%25B0%2584%250A%2520%2520%2520%2520map-underscore-to-camel-case%253A%2520true%250A%2520%2520%2520%2520log-impl%253A%2520org.apache.ibatis.logging.stdout.StdOutImpl%250A%2520%2520global-config%253A%250A%2520%2520%2520%2520db-config%253A%250A%2520%2520%2520%2520%2520%2520id-type%253A%2520ASSIGN_ID" style="width: 800px; height: 597px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
-</iframe></li>
-<li><p>配置application启动类</p>
-<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=800&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=%2540Slf4j%250A%2540SpringBootApplication%250Apublic%2520class%2520ReggieApplication%2520%257B%250A%2520%2520%2520%2520public%2520static%2520void%2520main%28String%255B%255D%2520args%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520SpringApplication.run%28ReggieApplication.class%252Cargs%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520log.info%28%2522%25E9%25A1%25B9%25E7%259B%25AE%25E5%2590%25AF%25E5%258A%25A8%25E6%2588%2590%25E5%258A%259F%25EF%25BC%2581%25EF%25BC%2581%25EF%25BC%2581%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%257D" style="width: 800px; height: 318px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
-</iframe></li>
-<li><p>把前端的静态资源放在resource目录</p>
-</li>
-</ul>
-<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-33-42.png"></p>
-<ul>
-<li>设置静态资源映射<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=800&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=%2540Slf4j%250A%2540Configuration%250Apublic%2520class%2520WebMvcConfig%2520extends%2520WebMvcConfigurationSupport%2520%257B%250A%2520%2520%2520%2520%2540Override%250A%2520%2520%2520%2520protected%2520void%2520addResourceHandlers%28ResourceHandlerRegistry%2520registry%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520log.info%28%2522%25E5%25BC%2580%25E5%25A7%258B%25E9%259D%2599%25E6%2580%2581%25E8%25B5%2584%25E6%25BA%2590%25E6%2598%25A0%25E5%25B0%2584%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520registry.addResourceHandler%28%2522%252Fbackend%252F**%2522%29.addResourceLocations%28%2522classpath%253A%252Fbackend%252F%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520registry.addResourceHandler%28%2522%252Ffront%252F**%2522%29.addResourceLocations%28%2522classpath%253A%252Ffront%252F%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%257D" style="width: 800px; height: 430px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
-</iframe></li>
-<li>启动项目，访问<a href="http://localhost:8080/backend/index.html">http://localhost:8080/backend/index.html</a></li>
-</ul>
-<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-34-42.png"></p>
-<h2 id="5、后台登录功能开发"><a href="#5、后台登录功能开发" class="headerlink" title="5、后台登录功能开发"></a>5、后台登录功能开发</h2><h1 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h1><ul>
-<li>登录页面展示(<a href="http://localhost:8080/backend/page/login/login.html">http://localhost:8080/backend/page/login/login.html</a>)</li>
-</ul>
-<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-36-30.png"></p>
+<p><strong>3. egoist：</strong><br>/ˈiː.ɡəʊ.ɪst/ = egotist/ˈiː.ɡə.tɪst/<br><strong>n.自我主义者；自高自大者；自私自利者</strong></p>
+<blockquote>
+<p><em>Politicians are notorious egoists</em>.<br>政客们是一帮臭名昭著的自我主义者。</p>
+</blockquote>
+<p><strong>4. notorious：</strong><br>/nəʊˈtɔː.ri.əs/<br><strong>adj.臭名昭著的，声名狼藉的</strong></p>
+<blockquote>
+<p><em>The company is notorious for paying its bills late.</em><br>该公司出了名地喜欢拖欠账单。<br><em>He was notorious for his violent and threatening behaviour.</em><br>他因暴力和威胁行为而臭名昭著。</p>
+</blockquote>
+<p><strong>5. indulge：</strong><br>/ɪnˈdʌldʒ/<br><strong>v.（使）沉溺于；（尤指）放纵，沉迷</strong></p>
+<blockquote>
+<p><em>I love wine but I don’t often indulge myself.</em><br>我爱喝红酒，但一般都有节制。<br><em>The soccer fans indulged their patriotism, waving flags and singing songs.</em><br>足球迷们摇着旗唱着歌，纵情抒发他们的爱国热情。<br><strong>纵容</strong><br><em>My aunt indulges the children dreadfully.</em><br>我婶婶太纵容孩子们了。</p>
+</blockquote>
+<p><strong>6. indulgence：</strong><br>/ɪnˈdʌl.dʒəns/<br><strong>n.沉溺；放纵；嗜好；爱好；享受</strong></p>
+<blockquote>
+<p><em>Chocolate is my only indulgence.</em><br>巧克力是我唯一的嗜好。<br><em>All the pleasures and indulgences of the weekend are over, and I must get down to some serious hard work.</em><br>周末的快乐时光和享受都结束了，我得认真处理一些棘手的工作。<br><strong>允许，溺爱；迁就；纵容</strong><br><em>There is no limit to the indulgence he shows to his grandchildren.</em><br>他无度地溺爱娇惯孙子孙女。</p>
+</blockquote>
+<p><strong>7. indulgent：</strong><br>/ɪnˈdʌl.dʒənt/<br><strong>adj.迁就的；纵容的；宽容的</strong></p>
+<blockquote>
+<p><em>an indulgent smile</em><br>宽容的微笑<br><em>He had been a strict father but was indulgent to/towards his grandchildren.</em><br>他曾是个严厉的父亲，但对孙子孙女却很纵容。</p>
+</blockquote>
+<p><strong>8. patriot：</strong><br>/ˈpætriət/，/ˈpeɪtriət/<br><strong>n.爱国者</strong></p>
+<blockquote>
+<p><em>Many terrorists consider themselves to be patriots fighting for freedom.</em><br>许多恐怖分子认为自己是为自由而战的爱国者。</p>
+</blockquote>
+<p><strong>9. patriotic：</strong><br>/pætrɪˈɔtɪk/ ，/peitrɪˈɔtɪk/<br><strong>adj.爱国的；有爱国心的</strong></p>
+<blockquote>
+<p><em>patriotic songs</em><br>爱国歌曲</p>
+</blockquote>
+<p><strong>10. patriotism：</strong><br>/ˈpætriə.tɪ.zəm/ ，/ˈpeɪ.triə.tɪ.zəm/<br><strong>n.爱国主义；爱国精神</strong></p>
+<blockquote>
+<p><em>He was a country boy who had joined the army out of a sense of patriotism and adventure.</em><br>他是个乡下小伙儿，参军是出于爱国之心和冒险精神。</p>
+</blockquote>
 ]]></content>
       <categories>
-        <category>items</category>
+        <category>English</category>
       </categories>
       <tags>
-        <tag>items</tag>
+        <tag>English</tag>
       </tags>
   </entry>
   <entry>
@@ -177,60 +136,141 @@
       </tags>
   </entry>
   <entry>
-    <title>VocabularyDay01</title>
-    <url>/2022/08/26/vocabularyday01/</url>
-    <content><![CDATA[<p><strong>1. ego：</strong><br>/ˈiː.ɡəʊ/ plural egos<br><strong>n.自我评价；自我中心；自负</strong>；<a href="https://zjlniubbb.github.io/">自尊心</a></p>
+    <title>C++游戏开发-基于cocos2dx4.0-环境安装</title>
+    <url>/2022/09/14/c/</url>
+    <content><![CDATA[<h2 id="一、软件安装"><a href="#一、软件安装" class="headerlink" title="一、软件安装"></a>一、软件安装</h2><p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-47-03.png"></p>
+<h2 id="1-cocos2dx下载"><a href="#1-cocos2dx下载" class="headerlink" title="1. cocos2dx下载"></a>1. cocos2dx下载</h2><p><a href="https://www.cocos.com/">点击前往官网地址</a></p>
+<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-50-54.png"></p>
+<p>下载安装完毕，打开如下</p>
+<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
 <blockquote>
-<p><em>That man has such an enormous ego - I’ve never known anyone so full of themselves!</em><br>那个人自负得要命—我从来没有见过这么自以为是的人。</p>
+<p>运行发现并不能打开，会出现闪退，我们需要安装兼容的Python版本，这里推荐的是Version 2.7</p>
 </blockquote>
-<p><strong>2. egoism：</strong><br>/ˈiːɡəʊ.ɪ.zəm/ = egotism /ˈiː.ɡə.tɪ.zəm/<br><strong>n.自我主义；自大；自负</strong></p>
-<blockquote>
-<p><em>Finding herself world-famous by the time she was 18 only encouraged the actress’s egotism/egoism.</em><br>年仅18岁就闻名世界只是让这位女演员变得更加自负了。</p>
+<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-48-29.png"></p>
+<h2 id="2-Python下载"><a href="#2-Python下载" class="headerlink" title="2. Python下载"></a>2. Python下载</h2><blockquote>
+<p>我下载的是<a href="https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64.msi">Python 2.7.8</a></p>
 </blockquote>
-<p><strong>3. egoist：</strong><br>/ˈiː.ɡəʊ.ɪst/ = egotist/ˈiː.ɡə.tɪst/<br><strong>n.自我主义者；自高自大者；自私自利者</strong></p>
 <blockquote>
-<p><em>Politicians are notorious egoists</em>.<br>政客们是一帮臭名昭著的自我主义者。</p>
+<p>务必记住下载安装的路径！！！<br>然后去配置环境变量<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-09-19.png"></p>
 </blockquote>
-<p><strong>4. notorious：</strong><br>/nəʊˈtɔː.ri.əs/<br><strong>adj.臭名昭著的，声名狼藉的</strong></p>
 <blockquote>
-<p><em>The company is notorious for paying its bills late.</em><br>该公司出了名地喜欢拖欠账单。<br><em>He was notorious for his violent and threatening behaviour.</em><br>他因暴力和威胁行为而臭名昭著。</p>
+<p>cmd 回车输入 python 查看当前版本信息，到这Python就安装完成啦！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-11-47.png"></p>
 </blockquote>
-<p><strong>5. indulge：</strong><br>/ɪnˈdʌldʒ/<br><strong>v.（使）沉溺于；（尤指）放纵，沉迷</strong></p>
 <blockquote>
-<p><em>I love wine but I don’t often indulge myself.</em><br>我爱喝红酒，但一般都有节制。<br><em>The soccer fans indulged their patriotism, waving flags and singing songs.</em><br>足球迷们摇着旗唱着歌，纵情抒发他们的爱国热情。<br><strong>纵容</strong><br><em>My aunt indulges the children dreadfully.</em><br>我婶婶太纵容孩子们了。</p>
+<p>此时再打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
 </blockquote>
-<p><strong>6. indulgence：</strong><br>/ɪnˈdʌl.dʒəns/<br><strong>n.沉溺；放纵；嗜好；爱好；享受</strong></p>
 <blockquote>
-<p><em>Chocolate is my only indulgence.</em><br>巧克力是我唯一的嗜好。<br><em>All the pleasures and indulgences of the weekend are over, and I must get down to some serious hard work.</em><br>周末的快乐时光和享受都结束了，我得认真处理一些棘手的工作。<br><strong>允许，溺爱；迁就；纵容</strong><br><em>There is no limit to the indulgence he shows to his grandchildren.</em><br>他无度地溺爱娇惯孙子孙女。</p>
+<p>两次回车跳过，因为这些是你需要另外下载的东西<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-17-06.png"></p>
 </blockquote>
-<p><strong>7. indulgent：</strong><br>/ɪnˈdʌl.dʒənt/<br><strong>adj.迁就的；纵容的；宽容的</strong></p>
 <blockquote>
-<p><em>an indulgent smile</em><br>宽容的微笑<br><em>He had been a strict father but was indulgent to/towards his grandchildren.</em><br>他曾是个严厉的父亲，但对孙子孙女却很纵容。</p>
+<p>然后我们在打开cmd 回车输入 cocos<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-18-40.png"><br>显示出这个 咱们就大功告成啦！完结撒花！！！(刚刚开始=_=!)</p>
 </blockquote>
-<p><strong>8. patriot：</strong><br>/ˈpætriət/，/ˈpeɪtriət/<br><strong>n.爱国者</strong></p>
-<blockquote>
-<p><em>Many terrorists consider themselves to be patriots fighting for freedom.</em><br>许多恐怖分子认为自己是为自由而战的爱国者。</p>
+<h2 id="二、创建项目"><a href="#二、创建项目" class="headerlink" title="二、创建项目"></a>二、创建项目</h2><blockquote>
+<p>使用 cocos new 命令创建新项目，命令格式如下:<br>cocos new -p -l -d<br>cocos new <game name=""> -p <package identifier=""> -l <language> -d <location></location></language></package></game></p>
 </blockquote>
-<p><strong>9. patriotic：</strong><br>/pætrɪˈɔtɪk/ ，/peitrɪˈɔtɪk/<br><strong>adj.爱国的；有爱国心的</strong></p>
 <blockquote>
-<p><em>patriotic songs</em><br>爱国歌曲</p>
+<p>示例：cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany</p>
 </blockquote>
-<p><strong>10. patriotism：</strong><br>/ˈpætriə.tɪ.zəm/ ，/ˈpeɪ.triə.tɪ.zəm/<br><strong>n.爱国主义；爱国精神</strong></p>
 <blockquote>
-<p><em>He was a country boy who had joined the army out of a sense of patriotism and adventure.</em><br>他是个乡下小伙儿，参军是出于爱国之心和冒险精神。</p>
+<p>cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany</p>
+</blockquote>
+<blockquote>
+<p>cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany</p>
+</blockquote>
+<p>使用命令 cocos new –help 可以查看到更多关于项目创建的帮助信息。</p>
+<h2 id="三、运行项目"><a href="#三、运行项目" class="headerlink" title="三、运行项目"></a>三、运行项目</h2><blockquote>
+<p>目前是没办法运行的，我们还需要安装一个cmake工具</p>
+</blockquote>
+<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-31-57.png"></p>
+<p><a href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/7b036e88-bbde-4859-a5cd-147d21b66141?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A/20220914/us-east-1/s3/aws4_request&amp;X-Amz-Date=20220914T144255Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=703433151e7e66a2b2addd5cfab8a8292b6126c49634452434577ee933bbec0f&amp;X-Amz-SignedHeaders=host&amp;actor_id=106440820&amp;key_id=0&amp;repo_id=537699&amp;response-content-disposition=attachment;%20filename=cmake-3.24.2-windows-x86_64.zip&amp;response-content-type=application/octet-stream">点击下载cmake-3.24.2-windows-x86_64</a><br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-33-07.png"></p>
+<blockquote>
+<p>记得把cmake bin 配置到环境变量中！</p>
+</blockquote>
+<blockquote>
+<p>然后回到我们创建项目的proj.win32目录下 输入cmd回车<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-37-12.png"></p>
+</blockquote>
+<blockquote>
+<p>执行如下命令：<br>cmake .. -G”Visual Studio 17 2022” -Tv143 -A win32<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-38-27.png"></p>
+</blockquote>
+<blockquote>
+<p>运行完毕后，回到proj.win32目录下，我们发现多了很多东西，打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-39-45.png"></p>
+</blockquote>
+<blockquote>
+<p>设为启动项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-40-22.png"></p>
+</blockquote>
+<blockquote>
+<p>执行项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-02.png"></p>
+</blockquote>
+<blockquote>
+<p>完结撒花！！！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-53.png"></p>
 </blockquote>
 ]]></content>
+      <tags>
+        <tag>游戏开发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Java项目实战——瑞吉外卖Day01</title>
+    <url>/2022/08/31/take-out-item/</url>
+    <content><![CDATA[<h2 id="Java项目实战——瑞吉外卖Day01"><a href="#Java项目实战——瑞吉外卖Day01" class="headerlink" title="Java项目实战——瑞吉外卖Day01"></a><strong>Java项目实战——瑞吉外卖Day01</strong></h2><p>ps:笔记内容为黑马程序员视频内容</p>
+<h2 id="1、项目介绍"><a href="#1、项目介绍" class="headerlink" title="1、项目介绍"></a>1、项目介绍</h2><blockquote>
+<p>本项目是专门为餐饮企业(餐厅、饭店)定制的一款软件产品，包括系统管理后台和移动端应用俩部分。其中，系统管理后台主要提供给餐饮企业内部员工使用，可以对餐厅的菜品、套餐、订单进行管理维护。移动端应用主要提供给消费者使用，可以在线浏览菜品、添加购物车、下单等。</p>
+</blockquote>
+<h1 id="本项目分为三期开发："><a href="#本项目分为三期开发：" class="headerlink" title="本项目分为三期开发："></a>本项目分为三期开发：</h1><blockquote>
+<ul>
+<li>第一期主要实现基本需求，其中移动端应用通过H5实现，用户可以通过手机浏览器来访问。</li>
+</ul>
+</blockquote>
+<ul>
+<li>第二期主要针对移动端应用进行改进，使用微信小程序实现，用户使用起来更加方便。</li>
+<li>第三期主要针对系统进行优化升级，提高系统的访问性能。</li>
+</ul>
+<h2 id="2、技术选型"><a href="#2、技术选型" class="headerlink" title="2、技术选型"></a>2、技术选型</h2><p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-01-09-09-51.png"></p>
+<h2 id="3、功能架构"><a href="#3、功能架构" class="headerlink" title="3、功能架构"></a>3、功能架构</h2><p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-01-09-26-12.png"></p>
+<h2 id="4、环境搭建"><a href="#4、环境搭建" class="headerlink" title="4、环境搭建"></a>4、环境搭建</h2><ul>
+<li><p>创建数据库<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-10-04.png"></p>
+</li>
+<li><p>执行SQL脚本<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-10-41.png"></p>
+</li>
+<li><p>数据表<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-11-00.png"></p>
+</li>
+<li><p>maven项目搭建<br><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-11-27.png"></p>
+</li>
+<li><p>添加依赖</p>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=%253C%253Fxml%2520version%253D%25221.0%2522%2520encoding%253D%2522UTF-8%2522%253F%253E%250A%253Cproject%2520xmlns%253D%2522http%253A%252F%252Fmaven.apache.org%252FPOM%252F4.0.0%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520xmlns%253Axsi%253D%2522http%253A%252F%252Fwww.w3.org%252F2001%252FXMLSchema-instance%2522%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520xsi%253AschemaLocation%253D%2522http%253A%252F%252Fmaven.apache.org%252FPOM%252F4.0.0%2520http%253A%252F%252Fmaven.apache.org%252Fxsd%252Fmaven-4.0.0.xsd%2522%253E%250A%2520%2520%2520%2520%253CmodelVersion%253E4.0.0%253C%252FmodelVersion%253E%250A%250A%2520%2520%2520%2520%253CgroupId%253Eorg.zzz%253C%252FgroupId%253E%250A%2520%2520%2520%2520%253CartifactId%253Etake_out_item%253C%252FartifactId%253E%250A%2520%2520%2520%2520%253Cversion%253E1.0-SNAPSHOT%253C%252Fversion%253E%250A%250A%2520%2520%2520%2520%253Cparent%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter-parent%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E2.4.5%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253CrelativePath%252F%253E%2520%253C%21--%2520lookup%2520parent%2520from%2520repository%2520--%253E%250A%2520%2520%2520%2520%253C%252Fparent%253E%250A%250A%2520%2520%2520%2520%253Cproperties%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cjava.version%253E1.8%253C%252Fjava.version%253E%250A%2520%2520%2520%2520%253C%252Fproperties%253E%250A%2520%2520%2520%2520%253Cdependencies%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter-test%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cscope%253Etest%253C%252Fscope%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.springframework.boot%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Espring-boot-starter-web%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cscope%253Ecompile%253C%252Fscope%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Ecom.baomidou%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Emybatis-plus-boot-starter%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E3.4.2%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Eorg.projectlombok%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Elombok%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E1.18.20%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Ecom.alibaba%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Efastjson%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E1.2.76%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdependency%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CgroupId%253Ecommons-lang%253C%252FgroupId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253CartifactId%253Ecommons-lang%253C%252FartifactId%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%253Cversion%253E2.6%253C%252Fversion%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fdependency%253E%250A%250A" style="width: 800px; height: 1825px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe></li>
+<li><p>application.yml</p>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=server%253A%250A%2520%2520port%253A%25208080%250Aspring%253A%250A%2520%2520application%253A%250A%2520%2520%2520%2520%2523%25E5%25BA%2594%25E7%2594%25A8%25E5%2590%258D%25E7%25A7%25B0%250A%2520%2520%2520%2520name%253A%2520reggie_take_out%250A%2520%2520datasource%253A%250A%2520%2520%2520%2520druid%253A%250A%2520%2520%2520%2520%2520%2520driver-class-name%253A%2520com.mysql.cj.jdbc.Driver%250A%2520%2520%2520%2520%2520%2520url%253A%2520jdbc%253Amysql%253A%252F%252Flocalhost%253A3306%252Freggie%253FserverTimezone%253DAsia%252FShanghai%2526useUnicode%253Dtrue%2526characterEncoding%253Dutf-8%2526zeroDateTimeBehavior%253DconvertToNull%2526useSSL%253Dfalse%2526allowPublicKeyRetrieval%253Dtrue%250A%2520%2520%2520%2520%2520%2520username%253A%2520root%250A%2520%2520%2520%2520%2520%2520password%253A%25201234%250Amybatis-plus%253A%250A%2520%2520configuration%253A%250A%2520%2520%2520%2520%2523address_book-%253EAddressBook%250A%2520%2520%2520%2520%2523%25E5%259C%25A8%25E6%2598%25A0%25E5%25B0%2584%25E5%25AE%259E%25E4%25BD%2593%25E6%2588%2596%25E8%2580%2585%25E5%25B1%259E%25E6%2580%25A7%25E6%2597%25B6%25EF%25BC%258C%25E5%25B0%2586%25E6%2595%25B0%25E6%258D%25AE%25E5%25BA%2593%25E4%25B8%25AD%25E8%25A1%25A8%25E5%2590%258D%25E5%2592%258C%25E5%25AD%2597%25E6%25AE%25B5%25E5%2590%258D%25E4%25B8%25AD%25E7%259A%2584%25E4%25B8%258B%25E5%2588%2592%25E7%25BA%25BF%25E5%258E%25BB%25E6%258E%2589%25EF%25BC%258C%25E6%258C%2589%25E7%2585%25A7%25E9%25A9%25BC%25E5%25B3%25B0%25E5%2591%25BD%25E5%2590%258D%25E6%25B3%2595%25E6%2598%25A0%25E5%25B0%2584%250A%2520%2520%2520%2520map-underscore-to-camel-case%253A%2520true%250A%2520%2520%2520%2520log-impl%253A%2520org.apache.ibatis.logging.stdout.StdOutImpl%250A%2520%2520global-config%253A%250A%2520%2520%2520%2520db-config%253A%250A%2520%2520%2520%2520%2520%2520id-type%253A%2520ASSIGN_ID" style="width: 800px; height: 597px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe></li>
+<li><p>配置application启动类</p>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=800&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=%2540Slf4j%250A%2540SpringBootApplication%250Apublic%2520class%2520ReggieApplication%2520%257B%250A%2520%2520%2520%2520public%2520static%2520void%2520main%28String%255B%255D%2520args%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520SpringApplication.run%28ReggieApplication.class%252Cargs%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520log.info%28%2522%25E9%25A1%25B9%25E7%259B%25AE%25E5%2590%25AF%25E5%258A%25A8%25E6%2588%2590%25E5%258A%259F%25EF%25BC%2581%25EF%25BC%2581%25EF%25BC%2581%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%257D" style="width: 800px; height: 318px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe></li>
+<li><p>把前端的静态资源放在resource目录</p>
+</li>
+</ul>
+<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-33-42.png"></p>
+<ul>
+<li>设置静态资源映射<iframe src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=800&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=%2540Slf4j%250A%2540Configuration%250Apublic%2520class%2520WebMvcConfig%2520extends%2520WebMvcConfigurationSupport%2520%257B%250A%2520%2520%2520%2520%2540Override%250A%2520%2520%2520%2520protected%2520void%2520addResourceHandlers%28ResourceHandlerRegistry%2520registry%29%2520%257B%250A%2520%2520%2520%2520%2520%2520%2520%2520log.info%28%2522%25E5%25BC%2580%25E5%25A7%258B%25E9%259D%2599%25E6%2580%2581%25E8%25B5%2584%25E6%25BA%2590%25E6%2598%25A0%25E5%25B0%2584%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520registry.addResourceHandler%28%2522%252Fbackend%252F**%2522%29.addResourceLocations%28%2522classpath%253A%252Fbackend%252F%2522%29%253B%250A%2520%2520%2520%2520%2520%2520%2520%2520registry.addResourceHandler%28%2522%252Ffront%252F**%2522%29.addResourceLocations%28%2522classpath%253A%252Ffront%252F%2522%29%253B%250A%2520%2520%2520%2520%257D%250A%257D" style="width: 800px; height: 430px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe></li>
+<li>启动项目，访问<a href="http://localhost:8080/backend/index.html">http://localhost:8080/backend/index.html</a></li>
+</ul>
+<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-34-42.png"></p>
+<h2 id="5、后台登录功能开发"><a href="#5、后台登录功能开发" class="headerlink" title="5、后台登录功能开发"></a>5、后台登录功能开发</h2><h1 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h1><ul>
+<li>登录页面展示(<a href="http://localhost:8080/backend/page/login/login.html">http://localhost:8080/backend/page/login/login.html</a>)</li>
+</ul>
+<p><img src="https://zjlniubbb.github.io/2022/08/31/take-out-item/2022-09-09-22-36-30.png"></p>
+]]></content>
       <categories>
-        <category>English</category>
+        <category>items</category>
       </categories>
       <tags>
-        <tag>English</tag>
+        <tag>items</tag>
       </tags>
   </entry>
   <entry>
     <title>开业大吉</title>
     <url>/2021/08/26/kai-ye-da-ji/</url>
-    <content><![CDATA[<p><audio src="\music\谢春花 - 陪在你左右.mp3" controls="controls" preload="auto" autoplay="autoplay" loop="loop" opacity=""></audio></p>
+    <content><![CDATA[<p><audio src="\music\谢春花 - 陪在你左右.mp3" controls="controls" preload="auto" autoplay="autoplay" loop="loop" opacity=""></audio><br><video src="\video\!!!.mp4" autoplay="autoplay" muted="muted" controls="controls" loop="loop" width="800"></video></p>
 <blockquote>
 <p>谢春花 - 陪在你左右</p>
 </blockquote>
@@ -297,5 +337,14 @@
       <tags>
         <tag>此处记录赵海棠第一次成功开通博客！</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>Lua学习笔记01</title>
+    <url>/2022/09/18/lua-demo01/</url>
+    <content><![CDATA[<blockquote>
+<p>变量类型    复杂数据类型    函数function    数据结构userdata    协同程序thread</p>
+</blockquote>
+<h2 id="第一个Lua程序"><a href="#第一个Lua程序" class="headerlink" title="第一个Lua程序"></a>第一个Lua程序</h2><p><img src="https://zjlniubbb.github.io/2022/09/18/lua-demo01/2022-09-18-17-30-31.png"></p>
+]]></content>
   </entry>
 </search>
