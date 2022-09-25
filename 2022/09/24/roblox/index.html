@@ -4,18 +4,20 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="C++游戏开发-基于cocos2dx4.0-环境安装, 海棠bro">
-    <meta name="description" content="一、软件安装
-1. cocos2dx下载点击前往官网地址
+    <meta name="keywords" content="Roblox, 海棠bro">
+    <meta name="description" content="一、Day011、构建旋转平台
 
-下载安装完毕，打开如下
+HingeConstraint 铰链约束
+ActuatorType 执行类型 
+Motor 发动机
+Angularvelocity 角速度
+MotorMaxTorque 电机最大转矩
 
 
-运行发现并不能打开，会出现闪退，我们需要安装兼容的Python版本，这里推荐的是Version 2.7
 
+2、跷跷板
 
-2. Python下载
-我下载的是Pytho">
+C">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -27,7 +29,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>C++游戏开发-基于cocos2dx4.0-环境安装 | 海棠bro</title>
+    <title>Roblox | 海棠bro</title>
     <link rel="icon" type="image/png" href="/medias/logo.png">
     
     <style>
@@ -362,7 +364,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">C++游戏开发-基于cocos2dx4.0-环境安装</h1>
+                    <h1 class="description center-align post-title">Roblox</h1>
                 </div>
             </div>
         </div>
@@ -386,8 +388,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">
-                                <span class="chip bg-color">游戏开发</span>
+                            <a href="/tags/Roblox/">
+                                <span class="chip bg-color">Roblox</span>
                             </a>
                         
                     </div>
@@ -402,21 +404,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2022-09-14
+                    2022-09-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-09-18
+                    2022-09-25
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    397
+                    915
                 </div>
                 
 
@@ -438,73 +440,115 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="一、软件安装"><a href="#一、软件安装" class="headerlink" title="一、软件安装"></a>一、软件安装</h2><p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-47-03.png"></p>
-<h2 id="1-cocos2dx下载"><a href="#1-cocos2dx下载" class="headerlink" title="1. cocos2dx下载"></a>1. cocos2dx下载</h2><p><a target="_blank" rel="noopener" href="https://www.cocos.com/">点击前往官网地址</a></p>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-50-54.png"></p>
-<p>下载安装完毕，打开如下</p>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
-<blockquote>
-<p>运行发现并不能打开，会出现闪退，我们需要安装兼容的Python版本，这里推荐的是Version 2.7</p>
+                <h2 id="一、Day01"><a href="#一、Day01" class="headerlink" title="一、Day01"></a>一、Day01</h2><h3 id="1、构建旋转平台"><a href="#1、构建旋转平台" class="headerlink" title="1、构建旋转平台"></a>1、构建旋转平台</h3><blockquote>
+<ul>
+<li>HingeConstraint 铰链约束</li>
+<li>ActuatorType 执行类型 </li>
+<li>Motor 发动机</li>
+<li>Angularvelocity 角速度</li>
+<li>MotorMaxTorque 电机最大转矩</li>
+</ul>
 </blockquote>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-14-23-48-29.png"></p>
-<h2 id="2-Python下载"><a href="#2-Python下载" class="headerlink" title="2. Python下载"></a>2. Python下载</h2><blockquote>
-<p>我下载的是<a target="_blank" rel="noopener" href="https://www.python.org/ftp/python/2.7.8/python-2.7.8.amd64.msi">Python 2.7.8</a></p>
+<p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-24-21-55-05.png"></p>
+<h3 id="2、跷跷板"><a href="#2、跷跷板" class="headerlink" title="2、跷跷板"></a>2、跷跷板</h3><blockquote>
+<ul>
+<li>CustomPhysicalProperties 自定义物理属性</li>
+<li>Density 密度</li>
+</ul>
 </blockquote>
-<blockquote>
-<p>务必记住下载安装的路径！！！<br>然后去配置环境变量<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-09-19.png"></p>
-</blockquote>
-<blockquote>
-<p>cmd 回车输入 python 查看当前版本信息，到这Python就安装完成啦！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-11-47.png"></p>
-</blockquote>
-<blockquote>
-<p>此时再打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-01-03.png"></p>
-</blockquote>
-<blockquote>
-<p>两次回车跳过，因为这些是你需要另外下载的东西<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-17-06.png"></p>
-</blockquote>
-<blockquote>
-<p>然后我们在打开cmd 回车输入 cocos<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-18-40.png"><br>显示出这个 咱们就大功告成啦！完结撒花！！！(刚刚开始=_=!)</p>
-</blockquote>
-<h2 id="二、创建项目"><a href="#二、创建项目" class="headerlink" title="二、创建项目"></a>二、创建项目</h2><blockquote>
-<p>使用 cocos new 命令创建新项目，命令格式如下:<br>cocos new -p -l -d<br>cocos new <game name=""> -p <package identifier=""> -l <language> -d <location></location></language></package></game></p>
-</blockquote>
-<blockquote>
-<p>示例：cocos new MyGame -p com.MyCompany.MyGame -l cpp -d ~/MyCompany</p>
-</blockquote>
-<blockquote>
-<p>cocos new MyGame -p com.MyCompany.MyGame -l lua -d ~/MyCompany</p>
-</blockquote>
-<blockquote>
-<p>cocos new MyGame -p com.MyCompany.MyGame -l js -d ~/MyCompany</p>
-</blockquote>
-<p>使用命令 cocos new –help 可以查看到更多关于项目创建的帮助信息。</p>
-<h2 id="三、运行项目"><a href="#三、运行项目" class="headerlink" title="三、运行项目"></a>三、运行项目</h2><blockquote>
-<p>目前是没办法运行的，我们还需要安装一个cmake工具</p>
-</blockquote>
-<p><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-31-57.png"></p>
-<p><a target="_blank" rel="noopener" href="https://objects.githubusercontent.com/github-production-release-asset-2e65be/537699/7b036e88-bbde-4859-a5cd-147d21b66141?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAIWNJYAX4CSVEH53A/20220914/us-east-1/s3/aws4_request&amp;X-Amz-Date=20220914T144255Z&amp;X-Amz-Expires=300&amp;X-Amz-Signature=703433151e7e66a2b2addd5cfab8a8292b6126c49634452434577ee933bbec0f&amp;X-Amz-SignedHeaders=host&amp;actor_id=106440820&amp;key_id=0&amp;repo_id=537699&amp;response-content-disposition=attachment;%20filename=cmake-3.24.2-windows-x86_64.zip&amp;response-content-type=application/octet-stream">点击下载cmake-3.24.2-windows-x86_64</a><br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-33-07.png"></p>
-<blockquote>
-<p>记得把cmake bin 配置到环境变量中！</p>
-</blockquote>
-<blockquote>
-<p>然后回到我们创建项目的proj.win32目录下 输入cmd回车<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-37-12.png"></p>
-</blockquote>
-<blockquote>
-<p>执行如下命令：<br>cmake .. -G”Visual Studio 17 2022” -Tv143 -A win32<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-38-27.png"></p>
-</blockquote>
-<blockquote>
-<p>运行完毕后，回到proj.win32目录下，我们发现多了很多东西，打开这个<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-39-45.png"></p>
-</blockquote>
-<blockquote>
-<p>设为启动项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-40-22.png"></p>
-</blockquote>
-<blockquote>
-<p>执行项目<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-02.png"></p>
-</blockquote>
-<blockquote>
-<p>完结撒花！！！<br><img src="https://zjlniubbb.github.io/2022/09/14/c/2022-09-15-00-41-53.png"></p>
-</blockquote>
+<p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-24-22-16-48.png"></p>
+<h3 id="3、陷阱"><a href="#3、陷阱" class="headerlink" title="3、陷阱"></a>3、陷阱</h3><iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520trick%2520%253Dscript.Parent%250A%250Atrick.Touched%253AConnect%28function%28otherPart%29%2520%250A%2509if%2520otherPart.Parent%253AFindFirstChild%28%2522Humanoid%2522%29%2520then%250A%2509%2509otherPart.Parent.Humanoid.Health-%253D10%250A%2509end%250Aend%29" style="width: 614px; height: 316px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
 
+<h3 id="3、动态创建僵尸对象"><a href="#3、动态创建僵尸对象" class="headerlink" title="3、动态创建僵尸对象"></a>3、动态创建僵尸对象</h3><iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520zombie%253Dgame.ServerStorage.Zombie%250Alocal%2520newZombie%253Dzombie%253AClone%28%29%250AnewZombie.Parent%253Dworkspace%250A%250Alocal%2520Zombiepart%253Dworkspace.zombiePart%250AnewZombie%253AMoveTo%28Zombiepart.Position%29%250A" style="width: 470px; height: 316px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+<h2 id="二、Day02"><a href="#二、Day02" class="headerlink" title="二、Day02"></a>二、Day02</h2><h3 id="1、剑的制作"><a href="#1、剑的制作" class="headerlink" title="1、剑的制作"></a>1、剑的制作</h3><blockquote>
+<ul>
+<li>texture 纹理</li>
+<li>idle 空闲的；闲置的</li>
+<li>slash 砍；劈</li>
+<li>Sword 剑</li>
+<li>Animation 动画</li>
+</ul>
+</blockquote>
+<p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-24-22-40-37.png"></p>
+<p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-25-09-51-01.png"></p>
+<h3 id="2、剑的攻击"><a href="#2、剑的攻击" class="headerlink" title="2、剑的攻击"></a>2、剑的攻击</h3><p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-24-22-50-29.png"></p>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520tool%253Dscript.Parent%250Alocal%2520idleAnimTrack%253Dnil%250Alocal%2520slashAnimTrack%253Dnil%250A%250Atool.Equipped%253AConnect%28function%28%29%250A%2509local%2520humanoid%2520%253Dtool.Parent.Humanoid%250A%2509idleAnimTrack%253Dhumanoid%253ALoadAnimation%28script.Parent%253AWaitForChild%28%2522Idle%2522%29%29%250A%2509idleAnimTrack.Priority%253DEnum.AnimationPriority.Movement%250A%2509idleAnimTrack%253APlay%28%29%250A%250A%2509slashAnimTrack%253Dhumanoid%253ALoadAnimation%28script.Parent.Slash%29%250A%2509slashAnimTrack.Priority%253DEnum.AnimationPriority.Action%250Aend%29%250A%250Atool.Activated%253AConnect%28function%28%29%250A%2509slashAnimTrack%253APlay%28%29%250Aend%29%250A%250Atool.Unequipped%253AConnect%28function%28%29%250A%2509idleAnimTrack%253AStop%28%29%250A%2509idleAnimTrack%253ADetory%28%29%250A%250A%2509slashAnimTrack%253AStop%28%29%250A%2509slashAnimTrack%253ADestroy%28%29%250Aend%29" style="width: 791px; height: 651px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+<h2 id="三、Day03"><a href="#三、Day03" class="headerlink" title="三、Day03"></a>三、Day03</h2><h3 id="1、团队之门"><a href="#1、团队之门" class="headerlink" title="1、团队之门"></a>1、团队之门</h3><blockquote>
+<p>因玩法和设计不同，某些游戏可能会需要构建仅限特定玩家通过的门扇或力场。举例来说，许多团队战斗类游戏在每局对战开始前都会在每个队伍的特定安全地点生成队伍成员，而其它队伍的玩家是无法进入这一区域的（这是为了避免玩家角色在加入或重生时不会立刻受到攻击）。<br>  虽然有多种方法可以实现这一需求，但在本教程中，我们将会利用碰撞过滤在游戏中创建只供指定玩家通过的门。</p>
+</blockquote>
+<p><strong>门的创建</strong></p>
+<blockquote>
+</blockquote>
+<p> 在此简单示例中，门扇为工作区域内的基本块部件，分别命名为 “BlueDoor” 和 “RedDoor”。其材质为 Glass（玻璃），且 Transparency（透明度）设置为 0.5。</p>
+<p><strong>碰撞群组</strong></p>
+<blockquote>
+<p>由于这两扇门一开始就存在于游戏世界中，我们可以立即对其碰撞群组进行设置。在 ServerScriptService 中，创建一个 Script 并在其中复制粘贴以下代码：</p>
+</blockquote>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520PhysicsService%2520%253D%2520game%253AGetService%28%2522PhysicsService%2522%29%250A%2520%250Alocal%2520blueDoors%2520%253D%2520%2522BlueDoors%2522%250Alocal%2520redDoors%2520%253D%2520%2522RedDoors%2522%250A%2520%250A--%2520Create%2520door%2520collision%2520groups%250APhysicsService%253ACreateCollisionGroup%28blueDoors%29%250APhysicsService%253ACreateCollisionGroup%28redDoors%29%250A%2520%250A--%2520Add%2520doors%2520to%2520their%2520proper%2520collision%2520group%250APhysicsService%253ASetPartCollisionGroup%28workspace.BlueDoor%252C%2520blueDoors%29%250APhysicsService%253ASetPartCollisionGroup%28workspace.RedDoor%252C%2520redDoors%29" style="width: 715px; height: 409px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+### 2、碰撞组
+
+<p><strong>角色部件</strong></p>
+<blockquote>
+<p>将玩家添加到碰撞群组时，一定要记得允许其角色的所有部件通过门，包括头部、躯干、手臂、腿、脚等。我们可以通过一个能够找到所有 BasePart 对象的函数来实现这一点（BasePart 对象是构成玩家虚拟形象的 Part（部件）和 MeshPart的基类）：</p>
+</blockquote>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520function%2520setCollisionGroup%28character%252C%2520groupName%29%250A%2509for%2520_%252C%2520child%2520in%2520ipairs%28character%253AGetChildren%28%29%29%2520do%250A%2509%2509if%2520child%253AIsA%28%2522BasePart%2522%29%2520then%250A%2509%2509%2509PhysicsService%253ASetPartCollisionGroup%28child%252C%2520groupName%29%250A%2509%2509end%250A%2509end%250A%2509character.DescendantAdded%253AConnect%28function%28descendant%29%250A%2509%2509if%2520descendant%253AIsA%28%2522BasePart%2522%29%2520then%250A%2509%2509%2509PhysicsService%253ASetPartCollisionGroup%28descendant%252C%2520groupName%29%250A%2509%2509end%250A%2509end%29%250Aend" style="width: 749px; height: 409px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+<blockquote>
+<p>游戏在生成玩家角色时，会使用大约 1 秒左右的时间将其身体部件进行“组装”，因此该函数会循环遍历初始子项，同时使用 DescendantAdded 事件检测新增添的其它部件。这样可以确保将所有角色部件都分配至正确的碰撞群组。</p>
+</blockquote>
+<blockquote>
+<p>对此函数进行设置后，我们可以对 Players.PlayerAdded 事件进行检测。该事件将会监听 CharacterAdded 事件，并使用 bluePlayers 碰撞群组运行 setCollisionGroup() 函数。</p>
+</blockquote>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=580&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520Players%2520%253D%2520game%253AGetService%28%2522Players%2522%29%250A%2520%250Alocal%2520function%2520onPlayerAdded%28player%29%250A%2509local%2520function%2520onCharacterAdded%28character%29%250A%2509%2509setCollisionGroup%28character%252C%2520bluePlayers%29%250A%2509end%250A%2509player.CharacterAdded%253AConnect%28onCharacterAdded%29%250Aend%250APlayers.PlayerAdded%253AConnect%28onPlayerAdded%29" style="width: 580px; height: 354px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+<p><strong>碰撞过滤</strong></p>
+<blockquote>
+<p>最后我们需要定义不会互相碰撞的碰撞群组。对于此示例来说，也就是蓝色玩家应该不与蓝色的门碰撞，红色玩家应该不与红色的门碰撞。</p>
+</blockquote>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=580&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=PhysicsService%253ACollisionGroupSetCollidable%28bluePlayers%252C%2520blueDoors%252C%2520false%29%250APhysicsService%253ACollisionGroupSetCollidable%28redPlayers%252C%2520redDoors%252C%2520false%29" style="width: 580px; height: 260px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
+
+<h2 id="四、Day04"><a href="#四、Day04" class="headerlink" title="四、Day04"></a>四、Day04</h2><h3 id="1、手枪的制作"><a href="#1、手枪的制作" class="headerlink" title="1、手枪的制作"></a>1、手枪的制作</h3><blockquote>
+<ul>
+<li>新建Tool对象，重命名为 Pistol</li>
+<li>拿到枪模型(MeshPart)–Body</li>
+<li>还需要一个手持的地方</li>
+<li>添加一个part，重命名为 Handle</li>
+<li>添加焊接对象 WeldConstraint(焊接约束)</li>
+</ul>
+</blockquote>
+<p><strong>如果出现枪的大小位置或者方向不满意的情况：</strong></p>
+<blockquote>
+<ul>
+<li>开始游戏 选择玩家拿武器的手和你的工具 右键复制</li>
+<li>停止游戏 把世界中的枪删掉 把复制的武器和手粘贴进来</li>
+<li>修改枪模型位置 不要动Handle 修改完毕 删掉手 </li>
+<li>工具对象拖动到StarterPack下面 开始游戏 自动到背包 点击装备 试用</li>
+</ul>
+</blockquote>
+<h3 id="2、手枪的子弹"><a href="#2、手枪的子弹" class="headerlink" title="2、手枪的子弹"></a>2、手枪的子弹</h3><blockquote>
+<ul>
+<li>在 Body 下新建一个 Attachment 对象 改名为 BulletStartingPoint </li>
+<li>加入一个部件，设置成小球，材质设置为红色 neon 放入 ServerStorage 备用</li>
+<li>加入脚本发射子弹<br><strong>如果发射方向错误的话：</strong></li>
+<li>停止游戏后修改 Attachment 对象的方向</li>
+</ul>
+</blockquote>
+<h3 id="3、手枪的攻击"><a href="#3、手枪的攻击" class="headerlink" title="3、手枪的攻击"></a>3、手枪的攻击</h3><blockquote>
+<ul>
+<li>子弹打到人物角色的时候进行扣血</li>
+</ul>
+</blockquote>
+<iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=580&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=false&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520BulletStartingPoint%250A%2509%253Dscript.Parent%253AWaitForChild%28%2522Body%2522%29%253AWaitForChild%28%2522BulletStartingPoint%2522%29%250A%250Alocal%2520Bullet%250A%2509%253Dgame.ServerStorage%253AWaitForChild%28%2522Bullet%2522%29%250A%250Ascript.Parent.Activated%253AConnect%28function%28%29%250A%2509local%2520bullet%253DBullet%253AClone%28%29%250A%2509bullet.Parent%253Dworkspace%250A%2509bullet.Position%253DBulletStartingPoint.WorldPosition%250A%2509%250A%2509local%2520bodyVelocity%253DInstance.new%28%2522BodyVelocity%2522%29%250A%2509bodyVelocity.Velocity%253DBulletStartingPoint.WorldCFrame.LookVector*50%250A%2509%250A%2509bodyVelocity.Parent%253Dbullet%250A%2509%250A%2509bullet.Touched%253AConnect%28function%28otherPart%29%250A%2509%2509local%2520model%253DotherPart%253AFindFirstAncestorWhichIsA%28%2522Model%2522%29%250A%2509%2509if%2520model%253D%253Dnil%2520then%250A%2509%2509%2509bullet%253ADestroy%28%29%250A%2509%2509%2509return%250A%2509%2509end%250A%2509%2509%250A%2509%2509local%2520humanoid%253Dmodel%253AFindFirstChild%28%2522Humanoid%2522%29%250A%2509%2509local%2520humanoid%253Dmodel%253AFindFirstChildOfClass%28%2522Humanoid%2522%29%250A%2509%2509if%2520humanoid%2520then%250A%2509%2509%2509humanoid%253ATakeDamage%2840%29%250A%2509%2509end%250A%2509%2509bullet%253ADestroy%28%29%250A%2509%250A%2509%2509--if%2520otherPart.Parent%253AFindFirstChild%28%2522Humanoid%2522%29%2520then%250A%2509%2509--%2509otherPart.Parent.Humanoid.Health%253D0%250A%2509%2509--end%250A%2509end%29%2509%250Aend%29" style="width: 580px; height: 1005px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
+</iframe>
                 
             </div>
             <hr/>
@@ -530,7 +574,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://zjlniubbb.github.io/2022/09/14/c/">https://zjlniubbb.github.io/2022/09/14/c/</a>
+                    <a href="https://zjlniubbb.github.io/2022/09/24/roblox/">https://zjlniubbb.github.io/2022/09/24/roblox/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -568,8 +612,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/">
-                                    <span class="chip bg-color">游戏开发</span>
+                                <a href="/tags/Roblox/">
+                                    <span class="chip bg-color">Roblox</span>
                                 </a>
                             
                         </div>
@@ -648,9 +692,56 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/2022/09/24/roblox/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="Roblox">
+                        
+                        <span class="card-title">Roblox</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-24
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            赵海棠
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Roblox/">
+                        <span class="chip bg-color">Roblox</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/2022/09/18/lua-demo01/">
                     <div class="card-image">
@@ -668,9 +759,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-09-18
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-09-18
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -678,55 +769,6 @@
                             
                         </span>
                     </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/2022/08/31/take-out-item/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/4.jpg" class="responsive-img" alt="Java项目实战——瑞吉外卖">
-                        
-                        <span class="card-title">Java项目实战——瑞吉外卖</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-08-31
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/categories/items/" class="post-category">
-                                    items
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/tags/items/">
-                        <span class="chip bg-color">items</span>
-                    </a>
-                    
                 </div>
                 
             </div>
