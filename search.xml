@@ -41,6 +41,7 @@
 <iframe src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&amp;t=seti&amp;wt=none&amp;l=auto&amp;width=680&amp;ds=true&amp;dsyoff=20px&amp;dsblur=68px&amp;wc=true&amp;wa=true&amp;pv=56px&amp;ph=56px&amp;ln=false&amp;fl=1&amp;fm=Hack&amp;fs=14px&amp;lh=133%25&amp;si=false&amp;es=2x&amp;wm=false&amp;code=local%2520tool%253Dscript.Parent%250Alocal%2520idleAnimTrack%253Dnil%250Alocal%2520slashAnimTrack%253Dnil%250A%250Atool.Equipped%253AConnect%28function%28%29%250A%2509local%2520humanoid%2520%253Dtool.Parent.Humanoid%250A%2509idleAnimTrack%253Dhumanoid%253ALoadAnimation%28script.Parent%253AWaitForChild%28%2522Idle%2522%29%29%250A%2509idleAnimTrack.Priority%253DEnum.AnimationPriority.Movement%250A%2509idleAnimTrack%253APlay%28%29%250A%250A%2509slashAnimTrack%253Dhumanoid%253ALoadAnimation%28script.Parent.Slash%29%250A%2509slashAnimTrack.Priority%253DEnum.AnimationPriority.Action%250Aend%29%250A%250Atool.Activated%253AConnect%28function%28%29%250A%2509slashAnimTrack%253APlay%28%29%250Aend%29%250A%250Atool.Unequipped%253AConnect%28function%28%29%250A%2509idleAnimTrack%253AStop%28%29%250A%2509idleAnimTrack%253ADetory%28%29%250A%250A%2509slashAnimTrack%253AStop%28%29%250A%2509slashAnimTrack%253ADestroy%28%29%250Aend%29" style="width: 791px; height: 651px; border:0; transform: scale(1); overflow:hidden;" sandbox="allow-scripts allow-same-origin">
 </iframe>
 
+<h3 id="3、人物动作"><a href="#3、人物动作" class="headerlink" title="3、人物动作"></a>3、人物动作</h3><p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-53-19.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-58-33.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-59-07.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-00-49.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-02-30.png"><br>发布至roblox保存素材<br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-04-59.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-06-59.png"><br>然后我们先运行游戏，看看玩家默认都有哪些动画<br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-10-32.png"><br>然后我们在工具下加入一个客户端脚本<br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-11-51.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-21-20-43.png"></p>
 <h2 id="三、Day03"><a href="#三、Day03" class="headerlink" title="三、Day03"></a>三、Day03</h2><h3 id="1、碰撞组"><a href="#1、碰撞组" class="headerlink" title="1、碰撞组"></a>1、碰撞组</h3><h4 id="碰撞群组"><a href="#碰撞群组" class="headerlink" title="碰撞群组"></a>碰撞群组</h4><blockquote>
 <p>碰撞群组允许你将对象放置在专用群组中，并控制它们是否可以与其他群组中的对象碰撞。非碰撞群组中的对象将彼此简单地穿过。</p>
 </blockquote>
@@ -204,6 +205,20 @@
 <li>将 Size → Y → Offset 设置为 -40。正如以上所示，这会使对象比屏幕全高少 40 像素，让顶部和底部都留出 20 像素的边距。<img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-25-20-58-30.png"></li>
 </ul>
 </blockquote>
+<h2 id="五、Day05"><a href="#五、Day05" class="headerlink" title="五、Day05"></a>五、Day05</h2><h3 id="1、拖尾-Trail"><a href="#1、拖尾-Trail" class="headerlink" title="1、拖尾 Trail"></a>1、拖尾 Trail</h3><blockquote>
+<p>Trail（轨迹）对象可以用来在两点之间创造类似轨迹的视觉效果。当此两点在空间中移动时，会在两点定义的平面上绘制纹理。此效果常用来创建将移动视觉化的效果，例如子弹飞行时后面跟随的轨迹、足迹、车轮印及其它各种相似效果。<br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-19-23-24.png"></p>
+</blockquote>
+<h3 id="2、光束-Beam"><a href="#2、光束-Beam" class="headerlink" title="2、光束 Beam"></a>2、光束 Beam</h3><blockquote>
+<p>Beam（光束）是一种特殊效果对象，其作用为在两个 Attachment 对象之间渲染纹理。开发者可以对颜色、透明度、宽度、纹理和纹理速度等光束属性进行配置。</p>
+</blockquote>
+<ol>
+<li>创建两个部件作为光束的起点和终点。<br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-19-28-51.png"></li>
+<li>将两个部件编组为一个 Model（选择两个部件然后按 Ctrl+G 或 ⌘+G）。<br> <img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-19-29-36.png"></li>
+<li>使用 + 按钮为每个部件插入附件。<br> <img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-19-30-26.png"></li>
+<li>向模型中**插入一个 Beam **。</li>
+<li>选择光束，然后在属性窗口中向下滚动到 Attachment0/Attachment1 属性。单击该属性，然后单击先前创建的附件来设置附件。注意不要将附件属性分配给同一附件！<br> <img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-19-31-41.png"></li>
+</ol>
+<h3 id="3、宠物背包GUI"><a href="#3、宠物背包GUI" class="headerlink" title="3、宠物背包GUI"></a>3、宠物背包GUI</h3><p><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-35-06.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-37-50.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-40-12.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-40-41.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-39-15.png"><br><img src="https://zjlniubbb.github.io/2022/09/24/roblox/2022-09-26-20-44-23.png"></p>
 ]]></content>
       <tags>
         <tag>Roblox</tag>
